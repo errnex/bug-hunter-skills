@@ -1,6 +1,6 @@
 # Bug Hunter Skills
 
-Skill pack for Sky's Hermes agent (Discord bot on the VPS). 18 skills for the FREE-only, PoC-proven bug bounty hunt.
+Skill pack for Sky's Hermes agent (Discord bot on the VPS). 19 skills for the FREE-only, PoC-proven bug bounty hunt.
 
 ## Install (Hermes)
 
@@ -58,6 +58,8 @@ Use one URL per skill from the list below. Each skill is a single SKILL.md file.
   https://raw.githubusercontent.com/errnex/bug-hunter-skills/main/local-browser-extension-audit/SKILL.md
 - defi-amm-security — DeFi AMM security checklist: Solidity pools, LP vaults, swap flows, oracle and admin controls.
   https://raw.githubusercontent.com/errnex/bug-hunter-skills/main/local-defi-amm-security/SKILL.md
+- wallet-security — crypto wallet audit for bounty hunting: seed and private-key handling, blind signing, unlimited approvals, Permit/Permit2, EIP-7702 delegation, malicious dApps, approval phishing.
+  https://raw.githubusercontent.com/errnex/bug-hunter-skills/main/local-wallet-security/SKILL.md
 
 ## House rules (apply on top of every skill)
 
