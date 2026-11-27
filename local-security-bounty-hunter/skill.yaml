@@ -1,0 +1,23 @@
+name: local_security_bounty_hunter
+title: Local security bounty hunter
+description: Hunt for exploitable, bounty-worthy security issues in repositories. Focuses on remotely reachable vulnerabilities that qualify for real reports instead of noisy local-only findings. Use when hunting reportable, remotely reachable vulnerabilities in a repository.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: false
+  evidence_handles:
+  - /home/hatch/AGENTS.md
+  - /home/hatch/MEMORY.md
+  - /home/hatch/workspace/custom-skills/local-security-bounty-hunter/SKILL.md
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: 'Within 30 days after install, bounty notes record the known-or-fixed check with pinned-block deployed state and the current submission route, and verifications record active status, cash reward, and freshness before deep work. At least one verification shows the new checks working: a finding or program deferred or killed as known, fixed, stale, or fork-execution failure, or on a paused or zero-cash gate. No known or fixed finding is submitted in the window.'
+    window_days: 30
+  rationale: 'Rounds 24 through 30 in the 2026-11-22 window exposed three gaps: Morpheus W3-A1 died because MOR-KI-013 names it and the route no longer accepts reports, Lista B-01 died as already published, Shipwire was paused and zero-cash, Drift was dead after a hack with a stale page and zero-value vaults, and Raydium W2 P5 looked real in a model but fork execution proved the swap reverts, voiding a 15749.81 dollar impact figure. The update adds the known-or-fixed pre-submission rule, live-program and cash-reward gates with freshness, and the fork-execution proof rule.'
+  review_after: 2026-12-22T04:18:36.315515+00:00
+  reviewed_at: 2026-11-22T04:18:36.315515+00:00
+  run_id: sirun_da04cfcdc430401b99f3515443cbe8c9
+  status: active
